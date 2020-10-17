@@ -17,5 +17,6 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.info =
 {
-  name: 'eval'
+  name: 'eval',
+  aliases: ['e', 'ev']
 }

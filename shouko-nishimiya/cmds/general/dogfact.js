@@ -1,14 +1,14 @@
 const discord = require('discord.js')
-const catFacts = require('cat-facts')
+const dogFacts = require('dog-facts')
 module.exports.run = async (client, message, args) => {
-  const randomFact = catFacts.random()
+  const randomFact = dogFacts.random()
   const e = new discord.MessageEmbed()
-  e.setDescription(randomFact + ' :cat:')
+  e.setDescription(randomFact + ' :dog:')
   e.setColor('#03d7fc')
   message.channel.send(e)
 }
 module.exports.info =
 {
-  name: 'catfact',
-  aliases: ['kittyfact', 'cf', 'cat', 'katfact']
+  name: 'dogfact',
+  aliases: ['doggyfact', 'df', 'dog', 'dogefact']
 }

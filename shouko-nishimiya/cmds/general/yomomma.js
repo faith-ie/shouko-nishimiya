@@ -9,5 +9,6 @@ module.exports.run = async (client, message, args) => {
 }
 module.exports.info =
 {
-  name: 'yomomma'
+  name: 'yomomma',
+  aliases: ['ym', 'momma', 'unfunnymomjoke']
 }

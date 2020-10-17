@@ -1,9 +1,13 @@
 const date = new Date()
 const box = require('ascii-box').box
 const { prefix } = require('../config.json')
+const { blacklistedUsers, blacklistedChannels, blacklistedServers } = require('../blacklists.json')
 module.exports = client => {
   client.on('message', async message => {
     if (message.author.bot) return
+    if (blacklistedUsers.includes(message.author.id)) return
+    if (blacklistedChannels.includes(message.channel.id)) return
+    if (blacklistedServers.includes(message.guild.id)) return
     if (message.channel.type === 'dm') return
     if (!message.content.startsWith(prefix)) return
     console.log(`Author: ${message.author.id} || ${message.author.username}`)
