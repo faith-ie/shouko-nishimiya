@@ -1,0 +1,27 @@
+{
+  "name": "shouko-nishimiya",
+  "version": "1.0.0",
+  "description": "A bot that does discord things",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd shouko-nishimiya && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faith1sGay/shouko-nishimiya.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "Faith Viola",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Faith1sGay/shouko-nishimiya/issues"
+  },
+  "homepage": "https://github.com/Faith1sGay/shouko-nishimiya#readme",
+  "dependencies": {
+    "ascii-box": "^1.1.2",
+    "discord.js": "^12.3.1"
+  }
+}
