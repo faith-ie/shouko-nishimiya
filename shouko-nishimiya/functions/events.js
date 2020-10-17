@@ -1,6 +1,6 @@
 const date = new Date()
 const box = require('ascii-box').box
-const { prefix } = require('f:/shouko-nishimiya/shouko-nishimiya/config.json')
+const { prefix } = require('../config.json')
 module.exports = client => {
   client.on('message', async message => {
     if (message.author.bot) return
