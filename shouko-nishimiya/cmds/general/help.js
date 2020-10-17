@@ -10,6 +10,7 @@ module.exports.run = async (client, message, args) => {
   e.addField('Ping', 'Pong!')
   e.addField('Penis', 'How big is your penis?')
   e.addField('Bible', 'Get bible verse!')
+  e.addField('Stats', 'View Bot Stats!')
   e.addField('Help', 'This help command!')
   e.setColor('#03d7fc')
   e.setFooter('You can view my source code at https://github.com/Faith1sGay/shouko-nishimiya ❤')
