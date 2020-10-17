@@ -1,0 +1,7 @@
+{
+    "token": "Bot Token Here",
+    "prefix": "?=",
+    "owners": ["add owner ids", "like this if there is multiple"],
+    "clientId": "bot client id",
+    "botVersion": "1.0.0"
+}
