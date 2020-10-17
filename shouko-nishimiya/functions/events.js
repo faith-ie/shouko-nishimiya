@@ -14,7 +14,7 @@ module.exports = client => {
     console.log(`Author: ${message.author.id} || ${message.author.username}`)
     console.log(`Server: ${message.guild.id} || ${message.guild.name}`)
     console.log(`Channel: ${message.channel.id} || ${message.channel.name}`)
-    console.log(`Message: ${message.content} || Date: ${date}`)
+    console.log(`Message: ${message.content} || Date: ${message.createdAt}`)
 
     const args = message.content.slice(prefix.length).split(/ +/g)
     const command = args.shift().toLowerCase()
