@@ -4,7 +4,7 @@
   "description": "A bot that does discord things",
   "main": "index.js",
   "scripts": {
-    "start": "cd shouko-nishimiya && node index.js"
+    "start": "cd shouko-nishimiya && yarn node index.js"
   },
   "repository": {
     "type": "git",
