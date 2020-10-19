@@ -1,7 +1,7 @@
 const discord = require('discord.js')
 const djs = require('discord.js').version
 const mem = Math.trunc(process.memoryUsage().rss)
-const uptime = Math.floor(process.uptime())
+const uptime = process.uptime()
 const { botVersion, clientId, owners } = require('../../config.json')
 module.exports.run = async (client, message, args) => {
   const e = new discord.MessageEmbed()
@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
   e.addField('Bot Id', `${clientId}`)
   e.addField('Memory', mem / 1e+6 + 'mb')
   e.addField('Owner IDs', `${owners}`)
-  e.addField('Uptime', uptime)
+  e.addField('Uptime', uptime + ' minutes')
   e.addField('Discord.js Version', djs)
   e.addField('Presence', `${client.guilds.cache.size} Servers\n${client.channels.cache.size} Channels\n${client.users.cache.size} Users`)
   e.setColor('#03d7fc')
