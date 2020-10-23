@@ -10,11 +10,12 @@ module.exports.run = async (client, message, args) => {
   if (result.out !== '') output += '\n' + result.out
   if (result.err !== '') output += (output !== '' ? '\n\n' : '') + '\n' + result.err
   // Check if we can send on Discord.
+  const op = output.substring(1, 1997)
   if (output.length < 2000) {
     // Send it on Discord.
-    message.channel.send('Result:\n\`\`\`js\n' + output + '\`\`\`')
+    message.channel.send('\n\`\`\`js\n' + output + '\`\`\`')
   } else {
-    message.channel.send('Output too long. ')
+    message.channel.send('\n\`\`\`js\n' + op + '\`\`\`')
   }
 }
 module.exports.info = {

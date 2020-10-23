@@ -1,7 +1,7 @@
 {
-    "token": "Bot Token Here",
+    "token": "NzY4ODgwNjUyNjI3NDc2NTMx.X5G56A.MR7YoA6yxRam4OEx3SISNqFSZL0",
     "prefix": "?=",
-    "owners": ["add owner ids", "like this if there is multiple"],
-    "clientId": "bot client id",
+    "owners": ["681600505490833423", "245321970760024064", "301379068941828096"],
+    "clientId": "768880652627476531",
     "botVersion": "1.0.0"
 }
