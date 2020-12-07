@@ -40,8 +40,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ascii-box", "npm:1.1.2"],
             ["bibleverses", "npm:3.1.1"],
             ["cat-facts", "npm:1.0.2"],
+            ["dblapi.js", "npm:2.4.1"],
             ["discord.js", "npm:12.3.1"],
             ["dog-facts", "npm:1.0.3"],
+            ["node-fetch", "npm:2.6.1"],
             ["pm2", "npm:4.5.0"],
             ["yo-mamma", "npm:1.3.0"]
           ],
@@ -773,6 +775,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/dayjs-npm-1.8.36-ece779f760-4e3eecfda9.zip/node_modules/dayjs/",
           "packageDependencies": [
             ["dayjs", "npm:1.8.36"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["dblapi.js", [
+        ["npm:2.4.1", {
+          "packageLocation": "./.yarn/cache/dblapi.js-npm-2.4.1-a7b7c03e7f-64a3a40f01.zip/node_modules/dblapi.js/",
+          "packageDependencies": [
+            ["dblapi.js", "npm:2.4.1"]
           ],
           "linkType": "HARD",
         }]
@@ -2445,8 +2456,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ascii-box", "npm:1.1.2"],
             ["bibleverses", "npm:3.1.1"],
             ["cat-facts", "npm:1.0.2"],
+            ["dblapi.js", "npm:2.4.1"],
             ["discord.js", "npm:12.3.1"],
             ["dog-facts", "npm:1.0.3"],
+            ["node-fetch", "npm:2.6.1"],
             ["pm2", "npm:4.5.0"],
             ["yo-mamma", "npm:1.3.0"]
           ],
