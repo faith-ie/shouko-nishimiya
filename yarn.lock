@@ -644,6 +644,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "dblapi.js@npm:^2.4.1":
   version: 2.4.1
   resolution: "dblapi.js@npm:2.4.1"
@@ -651,6 +652,8 @@ __metadata:
   languageName: node
   linkType: hard
 
+=======
+>>>>>>> 5768b324ca23471591a8fd178b9fcc378e4804b1
 "debug@npm:2":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -738,19 +741,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "discord.js@npm:^12.3.1":
   version: 12.3.1
   resolution: "discord.js@npm:12.3.1"
+=======
+"discord.js@npm:^12.4.0":
+  version: 12.4.0
+  resolution: "discord.js@npm:12.4.0"
+>>>>>>> 5768b324ca23471591a8fd178b9fcc378e4804b1
   dependencies:
     "@discordjs/collection": ^0.1.6
     "@discordjs/form-data": ^3.0.1
     abort-controller: ^3.0.0
+<<<<<<< HEAD
     node-fetch: ^2.6.0
+=======
+    node-fetch: ^2.6.1
+>>>>>>> 5768b324ca23471591a8fd178b9fcc378e4804b1
     prism-media: ^1.2.2
     setimmediate: ^1.0.5
     tweetnacl: ^1.0.3
     ws: ^7.3.1
+<<<<<<< HEAD
   checksum: ecb9eae99aedba43d46bd9947ec71617c202091b4a8e3a024fbc6b7803fc1b5dee2977277ada8ef5a9c2c8e65d15053d66c07f4420ad64af47363c640bcb13bb
+=======
+  checksum: ecbe51c417bc8d39fdaabf6301288bf054cc7247af9c8ea729318d7d211dc3d41e0a71cfa96b3c740b98718fbf6a9988f5c1c6505a750538cc26452e73e101be
+>>>>>>> 5768b324ca23471591a8fd178b9fcc378e4804b1
   languageName: node
   linkType: hard
 
@@ -1502,7 +1519,11 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "node-fetch@npm:^2.6.0, node-fetch@npm:^2.6.1":
+=======
+"node-fetch@npm:^2.6.1":
+>>>>>>> 5768b324ca23471591a8fd178b9fcc378e4804b1
   version: 2.6.1
   resolution: "node-fetch@npm:2.6.1"
   checksum: cbb171635e538162b977eac5dfe7a1e07a9a02e991924377a6435502291e2f823d306b95aabc455caebf4a118ccf836868462bc70ccc3095af02bb9da61fda37
@@ -2137,10 +2158,15 @@ resolve@^1.12.0:
     ascii-box: ^1.1.2
     bibleverses: ^3.1.1
     cat-facts: ^1.0.2
+<<<<<<< HEAD
     dblapi.js: ^2.4.1
     discord.js: ^12.3.1
     dog-facts: ^1.0.3
     node-fetch: ^2.6.1
+=======
+    discord.js: ^12.4.0
+    dog-facts: ^1.0.3
+>>>>>>> 5768b324ca23471591a8fd178b9fcc378e4804b1
     pm2: ^4.5.0
     yo-mamma: ^1.3.0
   languageName: unknown
