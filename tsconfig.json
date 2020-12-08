@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["es2016"],
+    "module": "commonjs",
+    "outDir": "./app",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2016"
+  },
+  "include": [
+    "./shouko-nishimiya"
+  ]
+}
