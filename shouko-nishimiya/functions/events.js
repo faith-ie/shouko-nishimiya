@@ -1,4 +1,5 @@
 const date = new Date()
+const fs = require('fs')
 const djs = require('discord.js').version
 const box = require('ascii-box').box
 const { prefix, clientId, botVersion } = require('../config.json')
@@ -18,7 +19,6 @@ module.exports = client => {
 
     const args = message.content.slice(prefix.length).split(/ +/g)
     const command = args.shift().toLowerCase()
-
     const commandfile = client.commands.get(command.toLowerCase())
     if (!commandfile) return
     commandfile.run(client, message, args)
@@ -50,7 +50,9 @@ Users: ${client.users.cache.size}\n`
     client.user.setActivity(`${prefix}help`)
   }
   )
-
+  client.on('error', async err => {
+    fs.writeFile('Errors.log', err)
+  })
   client.on('guildCreate', async (guild) => {
     const { id, name, memberCount } = guild
     console.log(`I have joined ${name} with the server id of ${id} that has ${memberCount} members!`)
