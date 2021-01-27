@@ -1,0 +1,8 @@
+{
+    "token": "Bot token",
+    "prefix": "?=",
+    "owners": "owner id here",
+    "clientId": "bot client id",
+    "botVersion": "1.0.0",
+    "topgg": "Top.gg token"
+}
