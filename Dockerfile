@@ -6,4 +6,4 @@ RUN cd /app/
 RUN npm i - g yarn
 RUN yarn set version latest
 RUN yarn install
-CMD ["npm", "start"]
+CMD ["npm", "docker"]
