@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
     const code = args.join(' ')
     let evaled = eval(code) // eslint-disable-line no-eval
     if (evaled.then) evaled = await evaled
-    if (typeof evaled !== 'string') { evaled = require('util').inspect(evaled).substring(1, 1997) }
+    if (typeof evaled !== 'string') { evaled = require('util').inspect(evaled).substring(0, 1997) }
     message.channel.send(clean(evaled), { code: 'js' })
   } catch (err) {
     message.channel.send(`\`ERROR\`\n\`\`\`js\n${clean(err)}\n\`\`\``)
