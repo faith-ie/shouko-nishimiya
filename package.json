@@ -4,9 +4,9 @@
   "description": "A bot that does discord things",
   "main": "index.js",
   "scripts": {
-    "start": "cd shouko-nishimiya && yarn node index.js",
+    "start": "npm i && pm2 start index.js",
     "docker": "yarn node index.js",
-    "pm2": "npm i && npm i -g pm2 && cd shouko-nishimiya && pm2 start index.js"
+    "pog": "npm i && pm2 start index.js"
   },
   "repository": {
     "type": "git",
@@ -23,12 +23,14 @@
   },
   "homepage": "https://github.com/Faith1sGay/shouko-nishimiya#readme",
   "dependencies": {
+    "@top-gg/sdk": "^3.0.7",
     "ascii-box": "^1.1.2",
     "bibleverses": "^3.1.1",
     "cat-facts": "^1.0.2",
     "dblapi.js": "^2.4.1",
     "discord.js": "^12.3.1",
     "dog-facts": "^1.0.3",
+    "humanize-duration": "^3.25.1",
     "node-fetch": "^2.6.1",
     "pm2": "^4.5.1",
     "systeminformation": "^4.33.5",

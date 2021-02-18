@@ -13,9 +13,9 @@ module.exports.run = async (client, message, args) => {
   const op = output.substring(0, 1997)
   if (output.length < 2000) {
     // Send it on Discord.
-    message.channel.send('\n\`\`\`js\n' + output + '\`\`\`')
+    message.channel.send('\n\`\`\`\n' + output + '\`\`\`')
   } else {
-    message.channel.send('\n\`\`\`js\n' + op + '\`\`\`')
+    message.channel.send('\n\`\`\`\n' + op + '\`\`\`')
   }
 }
 module.exports.info = {

@@ -1,4 +1,3 @@
-const date = new Date()
 const fs = require('fs')
 const djs = require('discord.js').version
 const box = require('ascii-box').box
@@ -9,14 +8,13 @@ module.exports = client => {
     if (message.author.bot) return
     if (blacklistedUsers.includes(message.author.id)) return
     if (blacklistedChannels.includes(message.channel.id)) return
+    if (!message.guild) return
     if (blacklistedServers.includes(message.guild.id)) return
-    if (message.channel.type === 'dm') return
     if (!message.content.startsWith(prefix)) return
     console.log(`Author: ${message.author.id} || ${message.author.username}`)
     console.log(`Server: ${message.guild.id} || ${message.guild.name}`)
     console.log(`Channel: ${message.channel.id} || ${message.channel.name}`)
     console.log(`Message: ${message.content} || Date: ${message.createdAt}`)
-
     const args = message.content.slice(prefix.length).split(/ +/g)
     const command = args.shift().toLowerCase()
     const commandfile = client.commands.get(command.toLowerCase())
@@ -37,7 +35,7 @@ module.exports = client => {
     console.log('Made by FVSAEZI#2700')
     console.log(
       box(
-`${client.user.tag}\n
+        `${client.user.tag}\n
 Prefix: ${prefix}\n
 Bot Version: ${botVersion}\n
 Discord.js Version: ${djs}\n        
