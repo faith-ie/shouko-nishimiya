@@ -1,20 +1,49 @@
 {
   "name": "shouko-nishimiya",
-  "version": "2.0.0",
-  "description": "typescript discord bot",
+  "version": "1.0.0",
+  "description": "A bot that does discord things",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc --resolveJsonModule",
-    "start": "cd app && node index.js"
+    "start": "npm i && pm2 start index.js",
+    "docker": "yarn node index.js",
+    "pog": "npm i && pm2 start index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faith1sGay/shouko-nishimiya.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
   "author": "Faith Viola",
   "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Faith1sGay/shouko-nishimiya/issues"
+  },
+  "homepage": "https://github.com/Faith1sGay/shouko-nishimiya#readme",
   "dependencies": {
-    "@top-gg/sdk": "^3.0.2",
-    "@types/node": "^14.14.11",
-    "@types/ws": "^7.4.0",
-    "discord.js": "^12.5.1",
-    "tslint": "^6.1.3",
-    "typescript": "^4.1.2"
+    "@top-gg/sdk": "^3.0.7",
+    "@types/ini": "^1.3.30",
+    "@types/node": "^14.14.31",
+    "ascii-box": "^1.1.2",
+    "bibleverses": "^3.1.1",
+    "cat-facts": "^1.0.2",
+    "dblapi.js": "^2.4.1",
+    "discord.js": "^12.3.1",
+    "dog-facts": "^1.0.3",
+    "eris": "^0.14.0",
+    "humanize-duration": "^3.25.1",
+    "ini": "^2.0.0",
+    "node-fetch": "^2.6.1",
+    "pm2": "^4.5.1",
+    "pretty-bytes": "^5.6.0",
+    "systeminformation": "^4.33.5",
+    "yo-mamma": "^1.3.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0"
   }
 }

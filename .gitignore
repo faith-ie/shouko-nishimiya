@@ -7,3 +7,6 @@ app
 config.json
 
 blacklists.json
+
+config.ini
+
