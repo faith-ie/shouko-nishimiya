@@ -1,7 +1,19 @@
 version: "3.9"
+volumes: 
+    shouko:
 services:
   bot-service:
-    restart: unless-stopped
+    restart: always
     build: 
       dockerfile: Dockerfile
       context: ./
+    environment: 
+        MONGO_USERNAME: root
+        MONGO_PASSWORD: localhost
+    depends_on: 
+        - mongo
+  mongo:
+    restart: always
+    image: mongo
+    volumes: 
+        - shouko:/data/db

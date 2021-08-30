@@ -2,8 +2,7 @@ FROM node:15.7.0-buster
 WORKDIR /app/
 COPY package.json /app/
 COPY /shouko-nishimiya/ /app/
+RUN yarn set version berry
 RUN cd /app/
-RUN npm i - g yarn
-RUN yarn set version latest
 RUN yarn install
-CMD ["npm", "docker"]
+CMD ["yarn", "node", "index.js"]

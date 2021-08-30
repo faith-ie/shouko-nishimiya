@@ -67,7 +67,7 @@ Users: ${client.users.cache.size}\n`
     client.user.setActivity(`${prefix}help`)
   }
   )
-  mongoose.connect('mongodb://localhost/shouko-nishimiya', {
+  mongoose.connect('mongodb://mongo:27017/shouko-beta', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
